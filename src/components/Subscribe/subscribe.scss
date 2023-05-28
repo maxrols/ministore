@@ -1,0 +1,54 @@
+.subscribe {
+    &__wrapper {
+        padding: 80px 110px;
+        background-color: #272727;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: space-between;
+    }
+    &__content {
+        color: #fff;
+    }
+    &__title {
+        margin-bottom: 10px;
+        color: #fff;
+    }
+}
+
+.subscribe-form {
+    display: flex;
+    max-width: 494px;
+    width: 100%;
+    &__input {
+        flex-grow: 3;
+        padding: 0.9375rem 1.875rem;
+    }
+    &__button {
+        flex-grow: 1;
+        font-family: Lato;
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        background-color: #72AEC8;
+        color: #fff;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 992px) {
+    .subscribe {
+        &__wrapper {
+            padding: 40px 55px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .subscribe {
+        &__wrapper {
+            padding: 20px 27px;
+        }
+    }
+}

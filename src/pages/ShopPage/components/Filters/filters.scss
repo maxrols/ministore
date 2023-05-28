@@ -1,0 +1,29 @@
+.filters {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.filters-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    &__item {
+        display: inline;
+        background: none;
+        text-align: left;
+        text-transform: capitalize;
+        font-weight: 300;
+        &.active {
+            color: #72AEC8;
+        }
+    }
+    &__title {
+        text-transform: uppercase;
+        font-size: 1.25rem;
+        text-decoration: underline;
+        font-family: Jost;
+        font-weight: 400;
+    }
+}

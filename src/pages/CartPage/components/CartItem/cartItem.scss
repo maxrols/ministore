@@ -1,0 +1,110 @@
+.cart-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #cdcdcd;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: center;
+    &__img {
+        max-width: 151px;
+        height: 188px;
+        object-fit: contain;
+    }
+    &__info {
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+    }
+    &__title {
+        font-size: 1.5rem;
+        color: #272727;
+        font-family: Jost;
+        font-weight: 400;
+    }
+    &__price {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #72aec8;
+    }
+}
+
+.quantity {
+    display: flex;
+    gap: 6px;
+    &__btn, &__count {
+        border: 1px solid #EEEEEE;
+    }
+    &__btn {
+        width: 44px;
+        height: 44px;
+        background: none;
+    }
+    &__count {
+        width: 90px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.close-btn {
+    background: none;
+    &__img {
+        width: 37px;
+        height: 37px;
+    }
+}
+
+@media (max-width: 992px) {
+    .quantity {
+        &__btn {
+            width: 30px;
+            height: 30px;
+        }
+        &__count {
+            width: 45px;
+            height: 30px;
+        }
+    }
+}
+
+@media (max-width: 660px) {
+    .total__price {
+        font-size: 1.75rem;
+    }
+    .close-btn {
+        &__img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .cart-item {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        &__info {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        &__img {
+            height: auto;
+            max-width: 100px;
+        }
+        &__text {
+            display: flex;
+            gap: 20px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .quantity {
+        flex-direction: column-reverse;
+        &__btn, &__count {
+            width: 40px;
+        }
+    }
+}

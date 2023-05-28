@@ -1,0 +1,94 @@
+
+@font-face {
+  font-family: 'Jost';
+  src: url('./fonts/Jost/Jost-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('./fonts/Jost/Jost-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./fonts/Lato/Lato-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./fonts/Lato/Lato-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./fonts/Lato/Lato-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, image {
+	display: block;
+}
+button {
+  cursor: pointer;
+}
+img {
+  margin-bottom: 0;
+  display: block;
+}
+input {
+  outline: none;
+}
+body {
+  color: #3a3a3a;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ol, ul {
+	list-style: none;
+}
+
+* {
+  margin: 0;
+	padding: 0;
+	border: 0;
+  box-sizing: border-box;
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 138%;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-family: Jost;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #272727;
+  letter-spacing: 0.06em;
+}
+
+.section {
+  padding: 3.75rem 0;
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  div > .section:first-child{
+    padding-top: 4rem;
+  }
+}

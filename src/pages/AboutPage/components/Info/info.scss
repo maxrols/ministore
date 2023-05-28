@@ -1,0 +1,29 @@
+.info {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+    &__img {
+        max-width: 640px;
+        min-width: 0;
+    }
+    &__content {
+        max-width: 590px;
+    }
+    &__title {
+        margin-bottom: 0.625rem;
+    }
+    &__descr {
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media (max-width: 660px) {
+    .info {
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+    }
+}

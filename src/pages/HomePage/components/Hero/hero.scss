@@ -1,0 +1,41 @@
+.hero_home {
+    background-color: #EDF1F3;
+    .hero {
+        &__wrapper {
+            padding: 10.25rem 1.25rem;
+            background-image: url(https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MPLA3ref_VW_PF+watch-45-alum-starlight-cell-8s_VW_PF_WF_SI?wid=2000&hei=2000&fmt=png-alpha&.v=1683226539556);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right center;
+        }
+        &__content {
+            max-width: 666px;
+        }
+        &__title {
+            font-family: Jost;
+            font-weight: 300;
+            font-size: 5.188rem;
+            margin-bottom: 2.5rem;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .hero_home {
+        .hero {
+            &__wrapper {
+                background-size: 400px;
+                background-position: right bottom
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .hero_home {
+        .hero {
+            &__wrapper {
+                padding: 5rem 1rem;
+                background-image: none
+            }
+        }
+    }
+}

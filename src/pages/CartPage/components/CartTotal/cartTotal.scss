@@ -1,0 +1,35 @@
+.total-sec {
+    &__title {
+        margin-bottom: 1.875rem;
+    }
+}
+
+.total-info {
+    margin-bottom: 1.875rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid #cdcdcd;
+    border-top: 1px solid #cdcdcd;
+    &__title {
+        font-size: 1.25rem;
+        font-family: Jost;
+        color: #272727;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+}
+
+.total-btns {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.total-btn {
+    padding: 1rem 3.125rem;
+    background: #272727;
+    color: #fff;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}

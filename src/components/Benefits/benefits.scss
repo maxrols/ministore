@@ -1,0 +1,24 @@
+.benefits {
+    padding-top: 7.5rem;
+    &__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    &__item {
+        max-width: 290px;
+        display: flex;
+        gap: 0.875rem;
+    }
+    &__icon {
+        height: 25px;
+    }
+    &__title {
+        line-height: 25px;
+        font-family: Jost;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+}
